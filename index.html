@@ -23,12 +23,14 @@
                 transform: rotate(0deg) translateX(8rem) rotate(0deg);
                 background-color: #FF79DA;
                 opacity: 0.5;
+                display: flex;
             }
 
             to {
                 transform: rotate(360deg) translateX(8rem) rotate(-360deg);
                 background-color: #9356DC;
                 opacity: 0;
+                display: none;
             }
         }
 
@@ -57,6 +59,7 @@
             position: fixed;
             animation: circle-loading 2s;
             animation-iteration-count: 10;
+            animation-delay: 50ms
         }
 
         .circle-1 {
